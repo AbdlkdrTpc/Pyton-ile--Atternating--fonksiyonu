@@ -2,7 +2,7 @@
 3 farklı yöntem ile Bir stringin indexlerinin çift veya tek sayı olmasına bağlı olarak ilgili indexteki değeri büyük harfe veya küçük harfe çeviren bir fonksiyon
 
 
-# Python process #####
+# Python process
     def alternating(string):
         new_string = ""
         for string_index in range(len(string)):
@@ -16,7 +16,7 @@
     string = "bu benim ilk kod çalışmam"
 
 
-# List comprehensions process#####
+# List comprehensions process
     x = [string[string_index].upper() if string_index %2 == 0 else string[string_index].lower() for string_index in range(len(string))]
     liste = ""
     for i in x:
@@ -24,7 +24,7 @@
     print(liste)
 
 
-# enumerate function #####
+# enumerate function
     def alternative(string):
         liste = ""
         for i, v in enumerate(string):
